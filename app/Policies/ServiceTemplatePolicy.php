@@ -94,7 +94,7 @@ class ServiceTemplatePolicy
      */
     public function showConfig(User $user, ServiceTemplate $template): bool
     {
-        return $user->isAdmin();
+        return $user->hasGlobalRead();
     }
 
     /**
