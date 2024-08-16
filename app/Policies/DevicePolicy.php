@@ -95,7 +95,7 @@ class DevicePolicy
      */
     public function showConfig(User $user, Device $device): bool
     {
-        return $user->isAdmin();
+        return $user->hasGlobalRead();
     }
 
     /**
